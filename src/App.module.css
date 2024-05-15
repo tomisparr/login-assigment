@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: hsl(206, 94%, 87%);
+    width: 100%;
+    font-family: "Ubuntu";
+}
+
+.container {
+    display: flex;
+    background: hsl(0, 0%, 100%);
+    padding: 1.2em 1em;
+    width: 900px;
+    height: 600px;
+    border-radius: .5em;
+}
+
+.sideimg img {
+    height: 100%;
+}
+
+.container .sideimg {
+    position: relative;
+}
+
+.sideimg .step {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2em 2.3em 0;
+}
+
+.step .steporder {
+    display: flex;
+    gap: 12px;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 1.5em;
+    cursor: pointer;
+}
+
+.steporder .num button {
+    color: hsl(0, 0%, 100%);
+    outline: none;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.steporder .num .nu {
+    color: black;
+    background: hsl(206, 94%, 87%);
+}
+
+.steporder .order {
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+}
+
+.order p {
+    color: hsl(231, 11%, 63%);
+    font-size: .83em;
+}
+
+.order span {
+    font-size: .9em;
+}
+
+.personal {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 4em;
+}
+
+.personal .info h1 {
+    font-size: 2.3em;
+    font-weight: 700;
+    color: hsl(213, 96%, 18%);
+}
+
+.personal .info p {
+    font-size: 1em;
+    font-weight: 300;
+    color: hsl(231, 11%, 63%);
+    margin: .3em 0 ;
+}
+
+.personal form {
+    margin-top: .2em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+form .details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.details label {
+    font-size: 1.2em;
+    color: hsl(213, 96%, 18%);
+    margin-bottom: .4em;
+}
+
+.details input {
+    outline: none;
+    border: 1px solid  hsl(229, 24%, 87%);
+    width: 100%;
+    height: 47px;
+    color:  hsl(213, 96%, 18%);
+    font-size: 1em;
+    font-weight: 200;
+    background: transparent;
+    border-radius: .4em;
+    padding: 1.1em;
+    
+}
+
+.details input:focus {
+    border: 1px solid hsl(243, 100%, 62%)  ;
+}
+
+.details input::placeholder {
+    color:  hsl(231, 11%, 63%);
+}
+
+form .next {
+    outline: 0;
+    border: 0;
+    display: flex;
+    align-self: flex-end;
+    background: hsl(213, 96%, 18%);
+    margin-top: 5em;   
+    color:  hsl(229, 24%, 87%);
+    border-radius: .4em;
+    padding: .8em 1.5em;
+    cursor: pointer;
+}
+
+.personal .next:hover {
+    background: hsl(243, 100%, 62%) ;
+}
+
+
+/* Select Plan Style*/
+.personal .select {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.4em;
+    margin-bottom: 2em;
+}
+
+.personal .select1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.4em;
+    margin-bottom: 2em;
+    display: none;
+}
+
+.select .plan {
+    border: 1px solid  hsl(229, 24%, 87%);
+    border-radius: .4em;
+    padding: 1.3em;
+    width: 140px;
+    height: 150px;
+    margin-right: 1em;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.select .plan:hover {
+    border: 1px solid hsl(243, 100%, 62%);
+    background:  hsl(231, 100%, 99%);
+}
+
+.plan img {
+    width: 37px;
+    
+}
+
+.plan .det {
+    margin-top: 2em;
+    
+}
+
+.det h3 {
+    color: hsl(213, 96%, 18%);
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.det p {
+    color: hsl(231, 11%, 63%);
+    font-size: .9em;
+}
+
+.personal .button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 9em;
+    background: transparent;
+}
+ 
+
+.button .ba{
+    color: hsl(231, 11%, 63%);
+    outline: none;
+    border: none;
+    background: transparent;
+
+}
+
+.button .back{
+    color: hsl(231, 11%, 63%);
+    outline: none;
+    border: none;
+    background: transparent;
+
+}
+
+
+
+.button .ba:hover {
+    color:  hsl(213, 96%, 18%) ;
+}
+
+.button .next {
+    background: hsl(213, 96%, 18%);
+    border: none;
+    outline: none;
+    color:  hsl(229, 24%, 87%);
+    border-radius: .4em;
+    padding: .8em 1.5em;
+    cursor: pointer;
+}
+
+
+/* Add Ons Style */
+.personal .boxcontainer {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em 0;
+}
+
+.personal .boxcontainer1 {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em 0;
+    display: none;
+}
+
+
+.boxcontainer .box {
+    width: 460px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-start;
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: .3em;
+    padding: 1em 2em;
+    margin-bottom: 1.3em;
+    cursor: pointer;
+}
+
+.boxcontainer .box:hover {
+    border: 1px solid hsl(243, 100%, 62%);
+    background:  hsl(231, 100%, 99%);
+
+}
+
+.box div .in {
+    width: 18px;
+    height: 24px;
+    accent-color: hsl(213, 96%, 18%);
+}
+
+.box .type h3 {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: hsl(213, 96%, 18%);
+}
+
+.box .type p {
+    font-size: .9em;
+    font-weight: 500;
+    color: hsl(229, 24%, 87%);
+}
+
+.box .price {
+    color: hsl(213, 96%, 18%);
+    font-size: 1.1em;
+}
+
+
+.personal .addbutton {
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addbutton .back {
+    color: hsl(231, 11%, 63%);
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.addbutton .next {
+    background: hsl(213, 96%, 18%);
+    border: none;
+    outline: none;
+    color:  hsl(229, 24%, 87%);
+    border-radius: .4em;
+    padding: .8em 1.5em;
+    cursor: pointer;   
+}
+
+
+/* Summary Style  */
+.personal .de {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.4em;
+}
+
+.de .deta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    padding:.7em 1em;
+    background: hsl(231, 100%, 99%);
+    cursor: pointer;
+}
+
+.deta div h3 {
+    font-size: 1em;
+    font-weight: 600;
+    color: hsl(213, 96%, 18%);
+}
+
+.deta div a {
+    color: hsl(229, 24%, 87%);text-decoration: underline;
+}
+
+.deta div a:hover {
+    color: hsl(243, 100%, 62%);
+}
+
+.deta .pr {
+    color: hsl(213, 96%, 18%);
+
+}
+
+.personal .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    padding: .9em 1em;
+    margin-top: 1em;
+    background: transparent;
+}
+
+/* Final Page Style */
+.container .thank{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 4em;
+    text-align: center;
+}
+
+.thank div img {
+    width: 80px;
+    height: 70px;
+}
+
+.thank .you {
+    display: flex;
+    flex-direction: column;
+}
+
+.you h1 {
+    font-size: 2.3em;
+    font-weight: 700;
+    color: hsl(213, 96%, 18%);
+    margin-top: .4em;
+}
+
+.you p {
+    font-size: 1em;
+    font-weight: 500;
+    color: hsl(231, 11%, 63%);
+    margin-top: 1.2em;
+}
